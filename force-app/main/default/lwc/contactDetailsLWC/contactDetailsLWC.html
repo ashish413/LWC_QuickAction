@@ -1,0 +1,17 @@
+<template>
+    <lightning-card
+        title="Contact Information"
+        icon-name="standard:contact"
+    >
+    <template if:true={contact.data}>
+            <lightning-layout vertical-align="center">
+                    <lightning-layout-item padding="around-small">
+                            <p>Name : {name}</p>
+                            <p>Account :{accountname}</p>
+                            <p>Phone :{phone}</p>
+                            <p>Email :{email}</p>
+                        </lightning-layout-item>        
+            </lightning-layout>
+    </template>
+</lightning-card>
+</template>
